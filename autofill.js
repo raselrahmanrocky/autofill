@@ -1,9 +1,3 @@
-/*!
- * @package Lightning Autofill
- * @author tohodo.com
- * @copyright (c) 2010-2024
- * @link https://www.tohodo.com/autofill/
- */
 function removeAutofillLimit(code) {
     return code.replace(/if \(10 - \+m\.toString\(16\) <= 0\) return;/g, '')
                .replace(/if \(b >= 10\) return;/g, '')
